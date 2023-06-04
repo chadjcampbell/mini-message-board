@@ -1,0 +1,9 @@
+extends layout
+
+block content
+  h1 Send a new message
+  form(action="/new", method="post") 
+    label(for="name") Name
+    input(type="text" name="name")
+    label(for="message") Message
+    input(type="text" name="message")
